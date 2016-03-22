@@ -1,9 +1,9 @@
 //+------------------------------------------------------------------+
 //|                                            ConversionW.mq4 |
-//|                        Copyright 2014, MetaQuotes Software Corp. |
+//|                        Copyright 2014, JAM                 |
 //|                                             https://www.mql5.com |
 //+------------------------------------------------------------------+
-#property copyright "Copyright 2014, MetaQuotes Software Corp."
+#property copyright "Copyright 2014, JAM"
 #property link      "https://www.mql5.com"
 #property version   "1.00"
 #property strict
@@ -159,7 +159,7 @@ void OnStart()
          } 
 //      } // Este es el del do
             
-      } while(FileIsEnding(fpin)==false); // Eliminar el parÈntesis anterior que es del for de prueba
+      } while(FileIsEnding(fpin)==false); // Eliminar el par√©ntesis anterior que es del for de prueba
 //      
 
       linea_escrita=STicker+","+ST_Apertura+"00,"+DoubleToString(dOpen, Digitos)+",";
@@ -180,11 +180,11 @@ void OnStart()
   }
 
 //+----------------------------------------------------------------------------------+
-// Proporciona el Nombre del fichero de Salida en funcion del par·metro de Conversion 
+// Proporciona el Nombre del fichero de Salida en funcion del par√°metro de Conversion 
 //
 // El Nombre de entrada sera XXXXXXMnn
 // XXXXXX Corresponde al cambio
-// nn ser· de ongitud variable e incluye el TimeFrame de Entrada
+// nn ser√° de ongitud variable e incluye el TimeFrame de Entrada
 //+----------------------------------------------------------------------------------+
 
 void GetFicheroSalida(string FicheroEntrada, string& FicheroSalida, long& TimeFrameLocal)
@@ -398,7 +398,7 @@ long CalculaT_Apertura(string ST,long TFrame)
       return(TA_Tmp);    
    }
    
-// Hay que aÒadir los dem·s TimeFrames   
+// Hay que a√±adir los dem√°s TimeFrames   
    TA_Tmp = StringToInteger(ST);      
    return(TA_Tmp);
 
