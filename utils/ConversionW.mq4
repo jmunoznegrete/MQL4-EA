@@ -1,9 +1,9 @@
 //+------------------------------------------------------------------+
 //|                                            ConversionW.mq4 |
-//|                        Copyright 2014, MetaQuotes Software Corp. |
+//|                        Copyright 2014, JAM                       |
 //|                                             https://www.mql5.com |
 //+------------------------------------------------------------------+
-#property copyright "Copyright 2014, MetaQuotes Software Corp."
+#property copyright "Copyright 2014, JAM"
 #property link      "https://www.mql5.com"
 #property version   "1.00"
 #property strict
@@ -160,7 +160,7 @@ void OnStart()
          } 
 //      } // Este es el del do
             
-      } while(FileIsEnding(fpin)==false); // Eliminar el parÈntesis anterior que es del for de prueba
+      } while(FileIsEnding(fpin)==false); // Eliminar el par√©ntesis anterior que es del for de prueba
 //      
 
       linea_escrita=STicker+","+ST_Apertura+DoubleToString(dOpen, Digitos)+",";
@@ -181,11 +181,11 @@ void OnStart()
   }
 
 //+----------------------------------------------------------------------------------+
-// Proporciona el Nombre del fichero de Salida en funcion del par·metro de Conversion 
+// Proporciona el Nombre del fichero de Salida en funcion del par√°metro de Conversion 
 //
 // El Nombre de entrada sera XXXXXXMnn
 // XXXXXX Corresponde al cambio
-// nn ser· de ongitud variable e incluye el TimeFrame de Entrada
+// nn ser√° de ongitud variable e incluye el TimeFrame de Entrada
 //+----------------------------------------------------------------------------------+
 
 void GetFicheroSalida(string FicheroEntrada, string& FicheroSalida, long& TimeFrameLocal)
@@ -263,7 +263,7 @@ datetime CalculaT_Apertura(string ST,long TFrame)
    var1=StrToTime("2003.8.12 17:35");
    var2=StrToTime("2003.8.11 17:35");
    
-   var3=var1-var2; // esto es un dÌa en datetime
+   var3=var1-var2; // esto es un d√≠a en datetime
 
    if ((TFrame==10080))
    {
@@ -276,7 +276,7 @@ datetime CalculaT_Apertura(string ST,long TFrame)
    }
 
    
-// Hay que aÒadir los dem·s TimeFrames   
+// Hay que a√±adir los dem√°s TimeFrames   
    TA_Tmp = var3;      
    return(TA_Tmp);
 
